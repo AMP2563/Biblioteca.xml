@@ -1,0 +1,25 @@
+<?xml-model href="file.dtd" type="application/xml-dtd"?>
+<!DOCTYPE pedido [
+<!ELEMENT pedido (cliente, productos, total)>
+<!ELEMENT cliente (nombre, direccion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre, precio, cantidad)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+]>
+
+   <pedido>
+        <cliente>
+            <nombre>Pepe</nombre>
+            <direccion>Calle de la Loma</direccion>
+        <productos>
+            <nombre>Cemento</nombre>
+            <precio>50 €</precio>
+            <cantidad>2 ud</cantidad>
+        </productos>
+            <total>100 €</total>
+        </cliente>
+   </pedido>

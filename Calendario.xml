@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE calendario [
+<!ELEMENT calendario (evento*)>
+<!ELEMENT evento (titulo, fecha, ubicacion)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
+<!ATTLIST evento tipo (reunión | conferencia | personal) #REQUIRED>
+]>
+
+<calendario>
+    <evento tipo="reunión">
+        <titulo></titulo>
+        <fecha></fecha>
+        <ubicacion></ubicacion>
+    </evento>
+
+    <evento tipo="reunión">
+        <titulo></titulo>
+        <fecha></fecha>
+        <ubicacion></ubicacion>
+    </evento>
+</calendario>

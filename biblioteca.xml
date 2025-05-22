@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro (titulo, autor, editorial, año)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ATTLIST libro idioma CDATA #IMPLIED>
+]>
+
+<biblioteca>
+    <libro idioma="es">
+        <titulo>Yo Robot</titulo>
+        <autor>Isaac Asimov</autor>
+        <editorial>EDAF</editorial>
+        <año>1960</año>  
+    </libro>
+
+    <libro idioma="es">
+        <titulo>Yo Robot</titulo>
+        <autor>Isaac Asimov</autor>
+        <editorial>EDAF</editorial>
+        <año>1960</año>  
+    </libro>
+</biblioteca>

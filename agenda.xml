@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda [
+<!ELEMENT agenda (contacto+)>
+<!ELEMENT contacto (nombre, telefono, email?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST contacto tipo (personal | profesional) "personal">
+]>
+
+<agenda>
+    <contacto tipo="profesional">
+        <nombre>Bernardo</nombre>
+        <telefono>91 444 444 444</telefono>
+        <email>barnardo@mail.com</email>
+    </contacto>
+
+    <contacto tipo="personal">
+        <nombre>Bernardo</nombre>
+        <telefono>91 444 444 444</telefono>
+        <email>barnardo@mail.com</email>
+    </contacto>
+
+</agenda>
